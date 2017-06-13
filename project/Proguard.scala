@@ -48,7 +48,7 @@ object LaunchProguard {
 
   def specific(launchSub: Reference): Seq[Setting[_]] = inConfig(Proguard)(Seq(
     keepFullClasses ++= "xsbti.**" :: Nil,
-    artifactPath := target.value / ("sbt-launch-" + version.value + ".jar"),
+    artifactPath := target.value / ("dbuild-launch-" + version.value + ".jar"),
     options ++= dependencyOptions(launchSub).value,
     options += "-injars " + mkpath(packageBin.value),
     packageBin := (packageBin in (launchSub, Compile)).value,
