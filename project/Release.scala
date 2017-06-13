@@ -14,7 +14,7 @@ object Release {
 
   val PublishRepoHost = "private-repo.typesafe.com"
 
-  def settings: Seq[Setting[_]] = Seq(
+  def settings: Seq[Setting[_]] = /* Seq(
     // TODO - Fix release settings
     checkCredentials := {
       // Note - This will either issue a failure or succeed.
@@ -39,7 +39,7 @@ object Release {
       if (version.value.trim.endsWith("SNAPSHOT")) Some("snapshots" at nexus + "content/repositories/snapshots")
       else                             Some("releases"  at nexus + "service/local/staging/deploy/maven2")
     }
-  ) ++ lameCredentialSettings ++ javaVersionCheckSettings
+  ) ++ */ lameCredentialSettings ++ javaVersionCheckSettings
 
   // Add credentials if they exist.
   def lameCredentialSettings: Seq[Setting[_]] =
