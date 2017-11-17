@@ -1,4 +1,4 @@
-# sbt launcher module
+# dbuild launcher module
 
 This project is the componetized sbt launcher.   It can be used to launch many Maven/Ivy deployed applications
 and utilities, and forms the basis of [sbt](https://github.com/sbt/sbt),
@@ -8,6 +8,11 @@ abilities.
 For the full set of documentation, read: http://www.scala-sbt.org/0.13/docs/Sbt-Launcher.html
 .
 
+This repository is a fork of the sbt launcher, with minimal customizations, for use by the
+[dbuild tool](https://github.com/lightbend/dbuild) (also see
+[the manual](http://lightbend.github.com/dbuild)).
+
+This fork is active, but not supported. It is maintained by the Tooling Team at Lightbend.
 
 ## Rebundling
 
