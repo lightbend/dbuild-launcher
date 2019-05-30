@@ -62,4 +62,3 @@ Additionally, we recommend renaming your bundled launch jar for your application
 # License
 
 This software is under a modified BSD license.
-
